@@ -8,7 +8,7 @@ const projects = [
     title: "Quick-Bite",
     description: "A modern, scalable frontend application for the Quick-Bite food delivery platform. Built with Next.js and TypeScript, this client provides an intuitive interface for customers, restaurant providers, and administrators to manage orders, menus, and reviews seamlessly.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "PostgreSQL", "Prisma", "Node.js", "Better Auth", "Stripe"],
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAk415P7jJrA8Pnu4uTEppUqT89jJ8Zg3JjZukjPXqf_OQQm_fGYyqh0hq--KQkLpix4ScyeOIVhon1afCbiVvd4NtHCNNXv5j3Sqs8c5toJN8bgfR-6yIjhhFaKFDYe5VFOKQsDkPPbwelOUkr4p7oo_1oLuTUkcHwhtHoAG23QB2RZmgrL-P2PTncEHXpkiwqVxbqTBE62o8ilErhICL3_jBdhOqbbp02xqV8I0amA0ZI8zlARaRihoAkGh4_Ch2H1P4tRcq7UuI",
+    image: "/project_1.png",
     reverse: false,
     githubClient: "https://github.com/saqib0404/quick-bite-client",
     githubServer: "https://github.com/saqib0404/quick-bite-server",
@@ -18,29 +18,16 @@ const projects = [
   },
   {
     id: "02",
-    title: "Movie Titles API",
-    description: "A collection movie list app that fetches and displays real-time data using complex API interactions. Implements asynchronous programming and comprehensive error handling.",
-    tags: ["JavaScript", "API Integration", "Git"],
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCaIlLUqJOy4Fa58Jh85gdiYn7A9IfHqjQiof_0DcufJsFFm1PZqIpfKrbqmMTmfI3jt-uNBIgPDofJP7gFq2lM735QGXSBv_t2z4yUAvc9VMrA16Obg8WPQn70TA6-A8skibsoYTfulbsxInzHomEJdm46l3m2-xUXkqFFJRFP85xubOBm2RUZk_lWCd30TDRFrZSctdLTiFnUWZaXyPNgJiUbvhJHD9UVmZNeQJv8B3hzFW3b6vUepUWydk_dqgo5EYjx_9-5NGI",
+    title: "Vehicle Rental Management System",
+    description: "A full-featured role-based Vehicle Rental Management System built with Node.js, Express, TypeScript, and PostgreSQL. This API allows users to register, log in, book vehicles, and manage rentals with proper business rules and security.",
+    tags: ["Node.js", "Express.js", "TypeScript", "PostgreSQL", "JWT", "bcrypt", "node-cron"],
+    image: "/project_2.png",
     reverse: true,
     githubClient: undefined,
     githubServer: undefined,
-    githubLink: "#",
-    liveLink: "#",
+    githubLink: "https://github.com/saqib0404/l2b2a2",
+    liveLink: "https://l2b6a2-omega.vercel.app/",
     githubIcon: "code"
-  },
-  {
-    id: "03",
-    title: "JS Calculator",
-    description: "A precision-focused calculator application leveraging mathematical algorithm concepts for accurate floating-point arithmetic. Features a clean, distraction-free interface.",
-    tags: ["Node.js", "Algorithms", "Math JS"],
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAZd1ocQ-7pwKJnlIHqSeUltJ0GaVba5qR-vB_OMpk0tph8KtOfWqF3YSYT0xTpc6Zu7o6_SHOJpVP_C6h9AF7v75rfGk8IiWSLmLRf7CEQPzKlTNhsyL0Ht7VGvBLNl4DjVKjsdOes-gje-xpuM7WJyK7VYkps-EuCvu5OOK71qXO-P4EwxvTjEa7-S6d4SGixzq-Op3GP3aV_b1Q4u-CnirZFJTopFlZ1fG9gf-II0W3tNU3ADVVoQ01Ld9saRqAYSktqVjpsTT4",
-    reverse: false,
-    githubClient: undefined,
-    githubServer: undefined,
-    githubLink: "#",
-    liveLink: "#",
-    githubIcon: "integration_instructions"
   }
 ];
 
@@ -100,7 +87,7 @@ export default function Projects() {
               {/* Project Image */}
               <div className="w-full md:w-1/2 overflow-hidden">
                 <div
-                  className="w-full h-full min-h-[300px] md:min-h-[400px] bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full min-h-[300px] md:min-h-[400px] bg-center bg-no-repeat bg-contain transition-transform duration-700 group-hover:scale-105"
                   style={{ backgroundImage: `url("${project.image}")` }}
                 ></div>
               </div>

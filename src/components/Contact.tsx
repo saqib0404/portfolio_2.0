@@ -78,7 +78,7 @@ export default function Contact() {
                 <span className="material-symbols-outlined text-primary text-2xl group-hover:scale-110 transition-transform flex-shrink-0">code</span>
                 <div className="min-w-0">
                   <p className="font-display text-muted-gray text-[10px] uppercase tracking-wider mb-1">GitHub</p>
-                  <p className="font-display text-background-light text-sm truncate" title="@saqib-a0404">@saqib-a0404</p>
+                  <p className="font-display text-background-light text-sm truncate" title="@saqib0404">@saqib0404</p>
                 </div>
               </a>
             </div>
