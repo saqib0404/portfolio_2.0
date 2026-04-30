@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, DotGothic16 } from "next/font/google";
 import "./globals.css";
 import SmoothScrolling from "@/components/SmoothScrolling";
+import CustomCursor from "@/components/CustomCursor";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -28,10 +29,12 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </head>
       <body
-        className={`${spaceGrotesk.variable} ${dotGothic.variable} antialiased bg-background-light dark:bg-background-dark text-background-dark dark:text-background-light selection:bg-primary selection:text-background-dark transition-colors duration-300`}
+        className={`${spaceGrotesk.variable} ${dotGothic.variable} antialiased bg-background-light dark:bg-background-dark text-background-dark dark:text-background-light selection:bg-primary selection:text-background-dark transition-colors duration-300 cursor-none`}
       >
+        <CustomCursor />
         <SmoothScrolling>{children}</SmoothScrolling>
       </body>
     </html>

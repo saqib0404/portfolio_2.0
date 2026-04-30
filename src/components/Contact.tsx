@@ -23,7 +23,7 @@ const itemVariants = {
 
 export default function Contact() {
   return (
-    <section className="bg-background-dark py-24 px-6 relative overflow-hidden">
+    <section id="contact" className="bg-background-dark py-24 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Hero Section */}
         <motion.header 
