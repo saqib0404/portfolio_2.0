@@ -3,19 +3,22 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "JavaScript", level: "ADVANCED", icon: "devicon-javascript-plain colored" },
-  { name: "React", level: "ADVANCED", icon: "devicon-react-original colored" },
-  { name: "Next.js", level: "ADVANCED", icon: "devicon-nextjs-plain" },
-  { name: "TypeScript", level: "INTERMEDIATE", icon: "devicon-typescript-plain colored" },
-  { name: "Tailwind CSS", level: "ADVANCED", icon: "devicon-tailwindcss-original colored" },
-  { name: "Prisma", level: "INTERMEDIATE", icon: "devicon-prisma-original" },
-  { name: "Node.js", level: "ADVANCED", icon: "devicon-nodejs-plain colored" },
-  { name: "Express.js", level: "ADVANCED", icon: "devicon-express-original" },
-  { name: "Redux", level: "INTERMEDIATE", icon: "devicon-redux-original colored" },
-  { name: "PostgreSQL", level: "INTERMEDIATE", icon: "devicon-postgresql-plain colored" },
-  { name: "MongoDB", level: "ADVANCED", icon: "devicon-mongodb-plain colored" },
-  { name: "Mongoose", level: "INTERMEDIATE", icon: "devicon-mongoose-original colored" },
-  { name: "Firebase", level: "INTERMEDIATE", icon: "devicon-firebase-plain colored" },
+  { name: "JavaScript", icon: "devicon-javascript-plain colored" },
+  { name: "React", icon: "devicon-react-original colored" },
+  { name: "Next.js", icon: "devicon-nextjs-plain" },
+  { name: "TypeScript", icon: "devicon-typescript-plain colored" },
+  { name: "Tailwind CSS", icon: "devicon-tailwindcss-original colored" },
+  { name: "Prisma", icon: "devicon-prisma-original" },
+  { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+  { name: "Express.js", icon: "devicon-express-original" },
+  { name: "Docker", icon: "devicon-docker-plain colored" },
+  { name: "Git", icon: "devicon-git-plain colored" },
+  { name: "GitHub", icon: "devicon-github-plain colored" },
+  { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
+  { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
+  { name: "Mongoose", icon: "devicon-mongoose-original colored" },
+  { name: "Firebase", icon: "devicon-firebase-plain colored" },
+  { name: "Postman", icon: "devicon-postman-plain colored" },
 ];
 
 const containerVariants = {
@@ -30,8 +33,8 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     transition: { duration: 0.5, ease: "easeOut" }
   }
@@ -42,7 +45,7 @@ export default function Skills() {
     <section className="bg-background-light dark:bg-background-dark py-24 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -51,14 +54,14 @@ export default function Skills() {
           >
             My <span className="text-primary">Skills</span>
           </motion.h2>
-          <motion.div 
+          <motion.div
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
             className="w-20 h-1.5 bg-primary mx-auto rounded-full mb-6 origin-left"
           ></motion.div>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -69,7 +72,7 @@ export default function Skills() {
           </motion.p>
         </div>
 
-        <motion.div 
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -77,7 +80,7 @@ export default function Skills() {
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 md:gap-6"
         >
           {skills.map((skill, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               variants={itemVariants}
               whileHover={{ y: -5 }}

@@ -16,8 +16,8 @@ const dotGothic = DotGothic16({
 });
 
 export const metadata: Metadata = {
-  title: "David Smith | Full-Stack Developer",
-  description: "Portfolio of David Smith, Full-Stack Developer with 3 years of experience in React and Node.js.",
+  title: "Saqib Ahmad | Web Developer",
+  description: "Portfolio of Saqib Ahmad, Full-Stack Developer with 3 years of experience in React and Node.js.",
 };
 
 export default function RootLayout({

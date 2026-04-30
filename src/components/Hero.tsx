@@ -24,7 +24,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative min-h-screen flex flex-col items-center justify-center pt-20 overflow-hidden bg-background-light dark:bg-background-dark">
+    <section id="hero" ref={heroRef} className="relative min-h-screen flex flex-col items-center justify-center pt-20 overflow-hidden bg-background-light dark:bg-background-dark">
       <div className="absolute inset-0 flex items-center justify-center select-none pointer-events-none z-0">
         <h1 className="text-[12vw] font-pixel font-black tracking-tighter uppercase leading-none text-muted-gray/10 dark:text-primary/10">
           DEVELOPER
@@ -35,16 +35,16 @@ export default function Hero() {
           DEVELOPER
         </h1>
       </div>
-      
+
       <motion.div style={{ y }} className="relative z-10 w-full max-w-4xl px-4 flex justify-center items-end h-[716px]">
-        <img 
-          alt="Portrait of David Smith" 
-          className="h-full object-contain filter grayscale-[20%] drop-shadow-2xl translate-y-4" 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfncUC_NJDJ3vB3C3qm5q8Sd6AxFiswEjsxnejVmnAvZqhOwI1bhqjhrbQx7KfGKmKQ2fSBiezCOLP2x6kChbsdon-qXMV6Xrs3ANqXFWI2hvaQmQOvz0XCyGVwRvmR7GDPCJGwIEWbFIDdRccZH_a9-EHIYRIWQpJ33gm1DTMhcJAyg9-_FxEqGOQZcUEvMPjH4a7DMCmgyV9uu_Eq9cT4FO_3MonIjl0lOjxxsJUQ_haxPuWfzR9rh3ugalHKI4bh3dOWlg61uY"
+        <img
+          alt="Portrait"
+          className="h-full object-contain filter grayscale-[20%] drop-shadow-2xl translate-y-4"
+          src="/hero.png"
         />
       </motion.div>
 
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
@@ -52,7 +52,7 @@ export default function Hero() {
       >
         <div className="flex items-center gap-4">
           <div className="text-right">
-            <p className="text-sm font-medium text-muted-gray">100+ Completed Projects</p>
+            <p className="text-sm font-medium text-muted-gray">Full-Stack Projects</p>
           </div>
           <div className="relative">
             <div className="w-12 h-[1px] bg-primary"></div>
@@ -61,7 +61,7 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 1 }}
@@ -73,24 +73,40 @@ export default function Hero() {
             <div className="absolute left-0 -top-1 w-2 h-2 rounded-full bg-primary ring-4 ring-primary/20"></div>
           </div>
           <div className="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 rounded-xl border border-primary/20 max-w-[200px]">
-            <p className="text-lg font-bold text-primary">3 Years of Experience</p>
+            <p className="text-lg font-bold text-primary">Tech Enthusiast</p>
             <p className="text-xs text-muted-gray mt-1 leading-relaxed">
-              With a strong foundation in full-stack development, I bring innovative solutions to every project.
+              Passionate about building innovative and scalable web applications.
             </p>
           </div>
         </div>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.2 }}
-        className="absolute bottom-10 left-10 z-30 flex gap-4 text-muted-gray"
+        className="absolute bottom-10 left-10 md:left-[10%] z-30 flex gap-4 text-muted-gray"
       >
-        <a className="hover:text-primary transition-colors" href="#"><img alt="Facebook" className="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK_pmE8HenNveCP5NE2Z_R7LOOS8K_Gdv8tiPHvj8nazlcUu2dTrgf0MLPaJjJR67mptv0jwpVYcb3SCgQw1Aa124UqOiFEGech3Du9Lp3gN2HpWpgsLmdRnBBU4_F841Yc2zHtTHH-3hgfoIWpnfa85sGdIAYr-P1q89bdPQbGSS3sAoZGlECBAkrfZSmD-AEFQvGcvKJPJtBpmuZqXHiiCai58NaucEngsRd2RdJPa3wqQ6f8nxpGtSE70zubxeFcdI8Ab6Bmag"/></a>
-        <a className="hover:text-primary transition-colors" href="#"><img alt="YouTube" className="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfdqQZS04B8-FYenz6BXP4mduTHyHxz-Zc61VXDlaXksMlfZYlebwruJRodONdEBg8wdyG-t2xbeX2L7KFxZGwW8aYu7vS8tj16ew3YvElSlzeJZxhLYvOgy_hDEQXsbWUWBx-G_d4vrQn0P9HJ3IkU_OnRfILIV8ZNFHPrbwOqBQ5LSibAmhZND34y7A50FXpwKobbKmnJ99mZcsi6q4Gv81_8-W2_47wBhuytbwEq4ZrR119N0hBm-acSsYrbXqgjMRPFKmDtrk"/></a>
-        <a className="hover:text-primary transition-colors" href="#"><img alt="LinkedIn" className="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC67tddrs6Cp3TeKEesDSURKv-OU9qvwwXpNlbTWAKSAzYA36dfg8nJiR5d0gIxcBFhFBu34e-_Fl_BOziCIULL34CmEGs_5lgM3RwWRBTOw7V27i7AzTcunL6fr4llOlTH8_eplZaqH1dr8I4LBOlr2QWOeOuJ1Hxd_tMsr_VsRmA_kkR0tbJ0TvvYaaOrdU4UcJPQjsfiHz0DQ-m3g8vXuaMCZLSPzyDNC2YQg1U8dMjJg_GHWQ3AnLzu-v2LphaIj_gxVT1q5yY"/></a>
-        <a className="hover:text-primary transition-colors" href="#"><img alt="Instagram" className="w-5 h-5 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0s1fuAh5nmgDVaQMWyNdvKozQzNHjM9eDfkbwbO_HuErRCviEhRjheHxtaEkP_f954dEIEtGCRJ9HQjlB3XZOiHXAGV9Sd0GZIthSaKeLlbcjMwlCH2SxEDjww8PlFcWU_0dmxIb50NWX30cl939BZxzaPCg58Iiw2vmJ1u3itFg8tjGLcgFVyvRJzKxM_m6X-lSoa2XJtIBzwSa8HetUBXHbFAAmdUxL5LILuUFMqGu7vqSVnAuYUPPQXX2BSL9eJP8FPCU8VxA"/></a>
+        <a href="https://github.com/saqib0404" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-muted-gray/10 backdrop-blur-md border border-primary/20 hover:bg-primary hover:text-background-dark hover:-translate-y-1 transition-all duration-300 shadow-[0_0_15px_rgba(161,194,189,0)] hover:shadow-[0_0_15px_rgba(161,194,189,0.4)]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/saqib-ahmad-dev/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-muted-gray/10 backdrop-blur-md border border-primary/20 hover:bg-primary hover:text-background-dark hover:-translate-y-1 transition-all duration-300 shadow-[0_0_15px_rgba(161,194,189,0)] hover:shadow-[0_0_15px_rgba(161,194,189,0.4)]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/saqib.ahmad.52459615" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-muted-gray/10 backdrop-blur-md border border-primary/20 hover:bg-primary hover:text-background-dark hover:-translate-y-1 transition-all duration-300 shadow-[0_0_15px_rgba(161,194,189,0)] hover:shadow-[0_0_15px_rgba(161,194,189,0.4)]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="mailto:saqibahmad0404@gmail.com" className="w-10 h-10 flex items-center justify-center rounded-full bg-muted-gray/10 backdrop-blur-md border border-primary/20 hover:bg-primary hover:text-background-dark hover:-translate-y-1 transition-all duration-300 shadow-[0_0_15px_rgba(161,194,189,0)] hover:shadow-[0_0_15px_rgba(161,194,189,0.4)]">
+          <span className="material-symbols-outlined text-[20px]">mail</span>
+        </a>
       </motion.div>
 
       <Navigation />

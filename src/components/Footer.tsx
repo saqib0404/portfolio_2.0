@@ -41,7 +41,7 @@ export default function Footer() {
         <div className="border-t border-muted-gray/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Copyright & Signature */}
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-            <span className="font-display text-sm text-muted-gray">© 2026 Saqib Ahmad | Web Developer</span>
+            <span className="font-display text-sm text-muted-gray">© 2026 <strong>Saqib Ahmad</strong> | Web Developer</span>
             <nav className="flex gap-6">
               <a className="text-sm font-medium text-muted-gray hover:text-primary transition-colors" href="#projects">Projects</a>
               <a className="text-sm font-medium text-muted-gray hover:text-primary transition-colors" href="#contact">Contact</a>
