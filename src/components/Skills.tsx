@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 const skills = [
   { name: "JavaScript", icon: "devicon-javascript-plain colored" },
@@ -21,23 +21,27 @@ const skills = [
   { name: "Postman", icon: "devicon-postman-plain colored" },
 ];
 
-const containerVariants = {
+
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1
-    }
-  }
+      staggerChildren: 0.1,
+    },
+  },
 };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: "easeOut" }
-  }
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
 };
 
 export default function Skills() {
@@ -88,7 +92,7 @@ export default function Skills() {
             >
               <i className={`${skill.icon} text-5xl mb-4 group-hover:scale-110 transition-transform duration-300 dark:text-background-light`}></i>
               <h3 className="text-background-dark dark:text-background-light font-display font-semibold text-lg">{skill.name}</h3>
-              <p className="text-[10px] font-bold tracking-widest text-muted-gray mt-2">{skill.level}</p>
+              {/* <p className="text-[10px] font-bold tracking-widest text-muted-gray mt-2">{skill.level}</p> */}
             </motion.div>
           ))}
         </motion.div>
