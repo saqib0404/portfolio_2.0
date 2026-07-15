@@ -5,7 +5,7 @@ import { motion, type Variants } from "framer-motion";
 const projects = [
   {
     id: "01",
-    title: "Quick-Bite",
+    title: "Quick-Bite (Full Stack)",
     description: "A modern, scalable frontend application for the Quick-Bite food delivery platform. Built with Next.js and TypeScript, this client provides an intuitive interface for customers, restaurant providers, and administrators to manage orders, menus, and reviews seamlessly.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "PostgreSQL", "Prisma", "Node.js", "Better Auth", "Stripe"],
     image: "/project_1.png",
@@ -18,15 +18,15 @@ const projects = [
   },
   {
     id: "02",
-    title: "Vehicle Rental Management System",
-    description: "A full-featured role-based Vehicle Rental Management System built with Node.js, Express, TypeScript, and PostgreSQL. This API allows users to register, log in, book vehicles, and manage rentals with proper business rules and security.",
-    tags: ["Node.js", "Express.js", "TypeScript", "PostgreSQL", "JWT", "bcrypt", "node-cron"],
+    title: "Spot-Sync (Backend)",
+    description: "A high-performance Go-based REST API for managing real-time parking availability, reservations, and zone-based access control. It uses transactional capacity checks and role-based auth to prevent overbooking and support dynamic parking operations.",
+    tags: ["Go", "Echo", "GORM", "PostgreSQL", "JWT", "Go Validator", "Air"],
     image: "/project_2.png",
     reverse: true,
     githubClient: undefined,
     githubServer: undefined,
-    githubLink: "https://github.com/saqib0404/l2b2a2",
-    liveLink: "https://l2b6a2-omega.vercel.app/",
+    githubLink: "https://github.com/saqib0404/Spot-Sync",
+    liveLink: "https://spot-sync-bhq9.onrender.com",
     githubIcon: "code"
   }
 ];
@@ -91,7 +91,7 @@ export default function Projects() {
               {/* Project Image */}
               <div className="w-full md:w-1/2 overflow-hidden">
                 <div
-                  className="w-full h-full min-h-[300px] md:min-h-[400px] bg-center bg-no-repeat bg-contain transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full min-h-[300px] md:min-h-[400px] bg-center bg-no-repeat lg:bg-cover bg-contain transition-transform duration-700 group-hover:scale-105"
                   style={{ backgroundImage: `url("${project.image}")` }}
                 ></div>
               </div>

@@ -4,21 +4,23 @@ import { motion, type Variants } from "framer-motion";
 
 const skills = [
   { name: "JavaScript", icon: "devicon-javascript-plain colored" },
+  { name: "TypeScript", icon: "devicon-typescript-plain colored" },
+  { name: "Golang", icon: "devicon-go-plain colored" },
   { name: "React", icon: "devicon-react-original colored" },
   { name: "Next.js", icon: "devicon-nextjs-plain" },
-  { name: "TypeScript", icon: "devicon-typescript-plain colored" },
   { name: "Tailwind CSS", icon: "devicon-tailwindcss-original colored" },
+  { name: "Git", icon: "devicon-git-plain colored" },
+  { name: "GitHub", icon: "devicon-github-plain colored" },
   { name: "Prisma", icon: "devicon-prisma-original" },
   { name: "Node.js", icon: "devicon-nodejs-plain colored" },
   { name: "Express.js", icon: "devicon-express-original" },
-  { name: "Docker", icon: "devicon-docker-plain colored" },
-  { name: "Git", icon: "devicon-git-plain colored" },
-  { name: "GitHub", icon: "devicon-github-plain colored" },
   { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
   { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
   { name: "Mongoose", icon: "devicon-mongoose-original colored" },
+  { name: "Docker", icon: "devicon-docker-plain colored" },
   { name: "Firebase", icon: "devicon-firebase-plain colored" },
   { name: "Postman", icon: "devicon-postman-plain colored" },
+  { name: "Vercel", icon: "devicon-vercel-original colored" },
 ];
 
 
