@@ -82,10 +82,15 @@ export default function About() {
 
             {/* Tech Tags / Action Button */}
             <motion.div variants={itemVariants} className="flex pt-4">
-              <button className="bg-primary text-background-dark px-8 py-3 rounded-xl font-display font-bold hover:bg-background-light active:scale-95 transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(161,194,189,0.3)]">
+              <a
+                href="https://drive.google.com/uc?export=download&id=15NjXRNYML9Q5Ncu_b91PPDic5OYCYFH7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary text-background-dark px-8 py-3 rounded-xl font-display font-bold hover:bg-background-light active:scale-95 transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(161,194,189,0.3)] inline-flex"
+              >
                 <span className="material-symbols-outlined">download</span>
                 Download CV
-              </button>
+              </a>
             </motion.div>
           </motion.div>
         </motion.div>
